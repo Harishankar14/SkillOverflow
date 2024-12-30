@@ -59,7 +59,7 @@ export default {
     },
   },
   mounted() {
-    // Fetch all posts on component mount
+    
     this.fetchPosts();
   },
 };
@@ -109,7 +109,7 @@ export default {
         transform: translateY(0);
     }
 
-    /* Specific Button Styles */
+    
     .coding-btn {
         background-color: #3b5998;
     }
@@ -149,8 +149,6 @@ export default {
     .filters-button:hover.all-btn {
         background-color: #f39c12;
     }
-
-    /* Styling for Posts */
     .post-card {
         background-color: #ffffff;
         border-radius: 10px;
@@ -161,7 +159,7 @@ export default {
     }
 
     .post-card:hover {
-        transform: translateY(-5px); /* Lift effect */
+        transform: translateY(-5px); 
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
@@ -184,7 +182,6 @@ export default {
         margin-top: 10px;
     }
 
-    /* Add a border and padding to separate post content */
     .post-card p {
         border-top: 2px solid #f4f4f4;
         padding-top: 15px;
