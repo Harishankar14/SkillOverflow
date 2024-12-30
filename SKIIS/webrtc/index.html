@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC with Auto Signaling</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>WebRTC Demo</h2>
+
+    <h3>Initiate a Call</h3>
+    <input id="receiverIdInput" placeholder="Enter Receiver's User ID" />
+    <button id="initiateCallButton">Initiate Call</button>
+
+    <h3>Wait for a Call</h3>
+    <button id="waitForCallButton">Wait for Call</button>
+
+    <h3>Video Streams</h3>
+    <div class="videos">
+      <div>
+        <h4>Local Stream</h4>
+        <video id="webcamVideo" autoplay playsinline muted></video>
+      </div>
+      <div>
+        <h4>Remote Stream</h4>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </div>
+    </div>
+
+    <div>
+      <button id="startRecordingButton">Start Recording</button>
+      <button id="stopRecordingButton" disabled>Stop Recording</button>
+      <button id="downloadButton" disabled>Download Recording</button>
+    </div>
+
+    <h3>Hangup</h3>
+    <button id="hangupButton" disabled>Hangup</button>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
